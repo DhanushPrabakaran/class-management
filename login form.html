@@ -2,35 +2,59 @@
 <html>
 <head>
 <style>
+ .cont{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgb(218, 217, 233);
+	padding-left: 0;
+	align-content: center;
+	margin-top: 250px;
+	max-width: 250px;
+	margin-left: 43%;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+	opacity: 1;
+	text-shadow: 1px 1px;
+	
+ }
 a:link, a:visited {
-  background-color: black;
-  color: white;
+  background-color: rgb(248, 241, 241);
+  color: rgb(20, 27, 29);
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  text-shadow: 1px 1px;
 }
 
 a:hover, a:active {
-  background-color: green;
+  background-color: rgb(45, 97, 45);
 }
 </style>
 </head>
 
 	<title>Email. Login</title>
 	<body>
-    <center>
-			<h2>Sign in to your email</h2>
+		<body style="background-color:rgb(250, 249, 244);"></body>
+    <!-- <center> -->
+<div class="cont">
+	
+		<h2>Sign in to your email</h2>
 			<div class="inputRow">
 				<input type="text" name="login" id="login" placeholder="Enter your email" value="" autofocus>
 			</div>
+			<br>
 			<div class="inputRow">
 				<input type="password" name="password" id="password" value="" placeholder="Enter your password">
 			</div>
+			<br>
 			<div class="inputRow submit">
 				<a href="New Update.html" target="_blank"> Submit</a>
 			</div>
-    </center>
-
+		
+    <!-- </center> -->
+</div>
 </body>
 </html>
