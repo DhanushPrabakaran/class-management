@@ -1,13 +1,64 @@
 <html>
 <head>
 <style>
+ div.a {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+div.b {font-family: 'arial';}
+#div1, #div2 {font-size-adjust: 0.70;}
+			
+			
+
+div.background {
+  background: rgba(255, 255, 255, 0) url(klematis.jpg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 200px;
+  position:center fixed;
+}
+
+div.transbox {
+  background-color: rgba(47, 224, 230, 0.349);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding:30px;
+  margin: 30px;
+  font-weight: bold;
+}
+			
+	
+			a:link, a:visited {
+			  background-color: rgba(241, 236, 241, 0);
+			  color: rgb(212, 11, 11);
+			  padding: 14px 30px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  
+			}
+			body {
+			  background-image: url(assets/closeup-plant.jpg);
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			  background-color:rgba(241, 240, 237, 0);
+			}
+			a:hover, a:active {
+			  background-color:rgb(240, 177, 20);
+			  
+			  
  
+			
 table, th, td {
   border: 1px solid black;
    border-collapse: collapse;
 }
 </style>
 <body>
+  <div class="background">
+		<div class="transbox">
+			<FORM>
 <p>
 <center>
 <input type="search" onclick="button">
@@ -107,7 +158,9 @@ table, th, td {
 <td> <input type="button" value="Click" onclick="click()"> </td>
 </tr>
 </i>
-</center>
 </table>
+</center>
+</div>
+</div>
 </body>
 </html>

@@ -1,12 +1,74 @@
 <html>
     <head>
+		<style>
+		
+div.a {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+div.b {font-family: 'arial';}
+#div1, #div2 {font-size-adjust: 0.70;}
+			
+			
+
+div.background {
+  background: rgba(255, 255, 255, 0) url(klematis.jpg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 200px;
+  position:center fixed;
+}
+
+div.transbox {
+  background-color: rgba(47, 224, 230, 0.349);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding:30px;
+  margin: 30px;
+  font-weight: bold;
+}
+			
+	
+			a:link, a:visited {
+			  background-color: rgba(241, 236, 241, 0);
+			  color: rgb(212, 11, 11);
+			  padding: 14px 25px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  
+			}
+			body {
+			  background-image: url(assets/closeup-plant.jpg);
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			  background-color:rgba(241, 240, 237, 0);
+			}
+			a:hover, a:active {
+			  background-color:rgb(240, 177, 20);
+			  
+			  
+			}</style> 
+			
 	</head>
+	
+	
 	 <body>
 <center>
 
+<<<<<<< HEAD
 	  <h1 style="color:rgb(236, 9, 9)" ><i> Self Detail Form </i></H1>
      <form>
 	   <table boder="50" style="border-color:black">
+=======
+
+	<div class="background">
+		<div class="transbox">
+			<FORM>
+	  <h1 > <b> SELF DETAILS FORM </b></H1>
+	   <table >
+>>>>>>> d49054d8f1b747bbb78829294fc9a72802e3fd50
 	   </br>
 	     <tr>
 		   <th>Entry Details</th>
@@ -114,19 +176,19 @@
          
          	
          <tr>
-            <td>Mobile Number</td>
+            <td>Mobile no</td>
             <td><input type="text" id="c"required></td>
             </tr>
              <tr>
-            <td>Whatsapp Number</td>
+            <td>Whatsapp</td>
             <td><input type="text" id="c"required></td>
             </tr>
          <tr>
-            <td>Hacker Rank Id</td>
+            <td>HackerRankId</td>
             <td><input type="text" id="c"required></td>
             </tr>
  <tr>
-            <td>Code Cheif Id </td>
+            <td>CodeCheifId </td>
             <td><input type="text" id="c" required></td>
             </tr>
 
@@ -136,14 +198,22 @@
  
       </tr>
       </TABLE>
+<<<<<<< HEAD
 	  </form>
 
 		 </br>	  
 		 </br>
 
 		 <input type="submit" id="sub" onclick="verification()">
+=======
+      </FORM>
+		 </br>	 
+		 <input type="submit" id="sub" onclick="sub()">
+		</div>
+	</div>
+		
+>>>>>>> d49054d8f1b747bbb78829294fc9a72802e3fd50
 	</center>
-
 </body>
 </html>
 
