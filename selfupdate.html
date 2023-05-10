@@ -1,156 +1,204 @@
 <html>
     <head>
 		<style>
-			.cont{
-			   display: flex;
-			   flex-direction: column;
-			   justify-content: center;
-			   align-items:center;
-			   background-color: rgba(2, 1, 24, 0.247);
-			   padding-left: ;
-			   align-content: center;
-			   margin-top: 250px;
-			   max-width: 250px;
-			   margin-left: 43%;
-			   padding: 20px 100px 20px 100px;
-			   border-radius: 50px;
-			   opacity: 100;
-			   text-shadow: 1px 1px;
-			   
+		
+div.a {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+div.b {font-family: 'arial';}
+#div1, #div2 {font-size-adjust: 0.70;}
+			
+			
+
+div.background {
+  background: rgba(255, 255, 255, 0) url(klematis.jpg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 200px;
+  position:center fixed;
+}
+
+div.transbox {
+  background-color: rgba(47, 224, 230, 0.349);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding:30px;
+  margin: 30px;
+  font-weight: bold;
+}
+			
+	
+			a:link, a:visited {
+			  background-color: rgba(241, 236, 241, 0);
+			  color: rgb(212, 11, 11);
+			  padding: 14px 25px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  
 			}
-		   a:link, a:visited {
-			 background-color: rgba(185, 47, 47, 0.692);
-			 color: rgb(20, 27, 29);
-			 padding: 14px 25px;
-			 text-align: center;
-			 text-decoration: none;
-			 display: inline-block;
-			 text-shadow: 1px 1px;
-		   }
-		   
-		   a:hover, a:active {
-			 background-color: rgb(45, 97, 45);
-		   }
-		   img {
-			 border-radius: 50%;
-		   }
-		   
-		   body {
-			 background-image: url('https://t3.ftcdn.net/jpg/02/14/52/44/240_F_214524451_LXXWMRWQ7glWwoyysjQtlwMNP1Igqnh2.jpg');
-			 background-repeat: no-repeat;
-						 background-attachment: fixed;
-						 background-size: cover;
-		   }
-		   </style>
+			body {
+			  background-image: url(assets/closeup-plant.jpg);
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			  background-color:rgba(241, 240, 237, 0);
+			}
+			a:hover, a:active {
+			  background-color:rgb(240, 177, 20);
+			  
+			  
+			}</style> 
+			
 	</head>
 	
 	
-	 <body><center>
-     <div class="container">
-		<div class="main">
-			<h2 style="font-style: oblique;">Self Detail Form</h2>
-			<form id="form_id" method="post" name="myform">
-				<label>Email:</label>
-				<input type="text" name="mail" size="25" maxlength="10" id="c"/><br>
-
-				<label>Password :</label>
-				<input type="password" name="password"size="25" maxlength="10"  id="password"/><br>
-
-				<label>Enter the first name:</label>
-				<input type="text" name="first nname"  size="25" maxlength="10" id="fn" required><br>
-
-				<label>Enter the second name:</label>
-				<input type="text" name="second name"  size="25" maxlength="20" id="sn" required><br>
-
-				<label rowspan="3" id="ok">Gender:
-				<input type="radio" name="gender" value="male">male:
-				<input type="radio" name="gender" value="female">female:
-				<input type="radio" name="gender" value="others">others:
-                </label> <br>
-				<tr><td>Language</td>
-					   <td><select>
-						  <option id="la">English</OPTION>
-						  <option>Tamil</option>
-						  <option>Hindi</OPTION>
-						  </select></td></tr><br>
-						  <label>Communication Address</label>
-				<input type="textarea" name="address1"  size="25" maxlength="20" id="ca" required><br>
-				<label>permanent  Address</label>
-				<input type="textarea" name="address2"  size="25" maxlength="20" id="pa" required><br>
-				<label>city:</label>
-				<select>
-				   <option id="c">COIMBATORE</OPTION>
-				   <option>CHENNAI</option>
-				   <option>THENI</OPTION>
-				   <option>DHINDUGAL</option>
-					<option>KASI</option>
-				   </select><br>
-				   <label>state</label>		    
-				   <select>
-						  <option id="st">Tamil Nadu</OPTION>
-						  <option>Andra Pradesh</option>
-						  <option>Uttra Pradesh</OPTION>
-						  <option>Bhiar</option>
-						   <option>Kerala</option>
-						  </select><br>
-						  <label>father name</label>
-				<input type="text" name="father"  size="25" maxlength="20" id="fn" required><br>
-				<label>mother name</label>
-				<input type="text" name="mother"  size="25" maxlength="20" id="mn" required><br>
-				<label>school details</label>
-				<input type="textarea" name="school"  size="25" maxlength="20" id="sd" required><br>
-
-				<label>10th & 12th Mark</label>
-				<input type="textarea" name="school"  size="25" maxlength="20" id="sd" required><br>
-				<label>college details</label>
-				<input type="textarea" name="school"  size="25" maxlength="20" id="cd" required><br>
-
-				<label>College Precentage</label>
-				<input type="text" name="mark"  size="25" maxlength="20" id="cp" required><br>
-
-				<label>Ahcivement</label>
-				<input type="textarea" name="achivement"  size="25" maxlength="20" id="ac" required><br>
-
-				<label>Hobbies</label>
-				<input type="textarea" name="hobbies"  size="25" maxlength="20" id="ho" required><br>
+	 <body>
+<center>
 
 
-				<label>Skill</label>
-				<input type="textarea" name="skill"  size="25" maxlength="20" id="sk" required><br>
-
-				<label>mobile no</label>
-				<input type="tel" name="number"  size="25" maxlength="20" id="c" required><br>
-
-				<label>whatsapp</label>
-				<input type="tel" name="number"  size="25" maxlength="20" id="c" required><br>
-
-				<label>HackerRankId</label>
-				<input type="text" name="ranker"  size="25" maxlength="20" id="c" required><br>
-
-				<label>CodeCheifId /label>
-				<input type="text" name="code"  size="25" maxlength="20" id="c" required><br>
-
-				<label> Image Option </label>
-					<input type="text" name="image"  size="25" maxlength="20" id="c" required><br>
-				</br>	  
-			</br>
-   
-			<input type="submit" id="sub" onclick="verification()">
-					
-</form>
-</div>
-</div>
-</center>
-</body>
-</html>
-
-
+	<div class="background">
+		<div class="transbox">
+			<FORM>
+	  <h1 > <b> SELF DETAILS FORM </b></H1>
+	   <table >
+	   </br>
+	     <tr>
+		   <th>Entry Details</th>
+		   <th>Your Details</th>
+		  </tr>
+          <tr>
+            <td>Email ID </td>
+            <td><input type="text"id="c"required ></td>
+            </tr>
+            <tr>
+            <td>Password</td>
+        <td><input type="password" name="password" id="password" value="" > </td>
+        </tr>
+		 <tr>
+            <td>Enter The First Name</td>			
+        	<td><input type="text" value="" size="25" maxlength="20" id="fn"required></td>	
+         </tr>
+		 <tr>
+		    <td>Enter The Second Name</td>
+		    <td><input type="text" value="" size="25" maxlength="20" id="sn"required></td>
+		 </tr>
 		
-		
-		
-         
+         <tr>	
+            <td rowspan="3" id="ok">Gender</td>
+            <td><input type="radio" name="gender" value="male">Male</td>	
+			</tr>
+			<tr>
+			<td><input type="radio" name="gender"value="female">Female</td></tr>
+			<tr>
+			<td><input type="radio" name="gender" value="others">Others</td>
+         </tr>
+ <tr>
+		 <td>Language</td>
+		    <td><select>
+			   <option id="la">English</OPTION>
+			   <option>Tamil</option>
+			   <option>Hindi</OPTION>
+			   </select></td>
+			   </tr>
+		 <tr>
+		    <td> Communication Address</td>
+			<td><textarea id="ca"required></textarea></td>
+		 </tr>	
+		 <tr>
+		    <td> Permanent Address</TD>
+			<td><textarea id="pa"required></textarea></td>
+		 </tr>
+		 <tr>
+		 <td>City</td>
+		    <td><select>
+			   <option id="c">COIMBATORE</OPTION>
+			   <option>CHENNAI</option>
+			   <option>THENI</OPTION>
+			   <option>DHINDUGAL</option>
+			    <option>KASI</option>
+			   </select></td>
+			   </tr>
+        <td>State</td>
+		    <td><select>
+			   <option id="st">Tamil Nadu</OPTION>
+			   <option>Andra Pradesh</option>
+			   <option>Uttra Pradesh</OPTION>
+			   <option>Bhiar</option>
+			    <option>Kerala</option>
+			   </select></td>
+			   </tr>
+			   
+	<tr>
+            <td>Father Name</td>			
+        	<td><input type="text" value="" size="25" maxlength="20" id="fn"required></td>	
+         </tr>
+         <tr>
+            <td>Mother Name</td>			
+        	<td><input type="text" value="" size="25" maxlength="20" id="mn"required></td>	
+         </tr>
+        
+         <tr>
+            <td>School Deatils</td>			
+        	<td><textarea id="sd"required></textarea></td>	
+         </tr>
+         	<tr>
+             <td> 10th & 12th Mark </td>			
+        	<td><input type="text" value="" size="25" maxlength="20" id="ma"required></td>	
+         </tr>
+         	<tr>
+           <td> College Deatils</td>		
+        	<td><textarea id="cd"required></textarea></td>
+         </tr>
+         <tr>
+            <td> College Precentage </td>
+        	<td><input type="text" value="" size="25" maxlength="20" id="cp"required></td>	
+         </tr>
+         <tr>
+            <td>Ahcivement</td>			
+        	<td><textarea id="ac"></textarea></td>	
+         </tr>
+         <tr>
+            <td>Hobbies</td>			
+        	<td><textarea id="ho"></textarea></td>	
+         </tr>
+          <tr>
+            <td>Skill</td>			
+        	<td><textarea id="sk"></textarea></td>
+         </tr>
          
          	
+         <tr>
+            <td>Mobile no</td>
+            <td><input type="text" id="c"required></td>
+            </tr>
+             <tr>
+            <td>Whatsapp</td>
+            <td><input type="text" id="c"required></td>
+            </tr>
+         <tr>
+            <td>HackerRankId</td>
+            <td><input type="text" id="c"required></td>
+            </tr>
+ <tr>
+            <td>CodeCheifId </td>
+            <td><input type="text" id="c" required></td>
+            </tr>
 
-	  
+    <tr>
+<td> Image Option </td>
+<td><input type="file" id="my file" name="file name" required></td>
+ 
+      </tr>
+      </TABLE>
+      </FORM>
+		 </br>	 
+		 <input type="submit" id="sub" onclick="sub()">
+		</div>
+	</div>
+		
+	</center>
+</body>
+</html>
 
