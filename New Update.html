@@ -17,7 +17,7 @@
 	<div class="cont"></div>
 	<body style="background-color:rgb(224, 209, 66);"></body>
 	  <h1 style="color:rgb(226, 226, 226)"><i>  Updating Form </i></H1>
-     
+     <form id="form">
 	   <table boder="50" style="border-color:rgb(241, 8, 8)">
 	   </br>
 	     <tr>
@@ -43,12 +43,12 @@
 		
          <tr>	
             <td rowspan="3" id="ok">Gender</td>
-            <td><input type="radio" name="gender" value="male">Male</td>	
+            <td><input type="radio" name="gender" value="male" id="m">Male</td>	
 			</tr>
 			<tr>
-			<td><input type="radio" name="gender"value="female">Female</td></tr>
+			<td><input type="radio" name="gender"value="female" id="f">Female</td></tr>
 			<tr>
-			<td><input type="radio" name="gender" value="others">Others</td>
+			<td><input type="radio" name="gender" value="others" id="o">Others</td>
          </tr>
  <tr>
 		 <td>Language</td>
@@ -112,7 +112,7 @@
         	<td><input type="text" value="" size="25" maxlength="20" id="cp"required></td>	
          </tr>
          <tr>
-            <td>Ahcivement</td>			
+            <td>Achivement</td>			
         	<td><textarea id="ac"></textarea></td>	
          </tr>
          <tr>
@@ -144,18 +144,18 @@
 
     <tr>
 <td> Image Option </td>
-<td><input type="file" id="my file" name="file name" required></td>
+<td><input type="file" id="file" name="file name" required></td>
  
       </tr>
       </TABLE>
-
+</form>
 		 </br>	  
 		 </br>
 
-		 <input type="submit" id="sub" onclick="sub()">
+		 <input type="submit" id="sub">
 
 </center>
-
+<script src="verify.js"></script>
 
 	</body>
 </html>
