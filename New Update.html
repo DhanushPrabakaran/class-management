@@ -1,64 +1,22 @@
 <html>
     <head>
-		<style>
-		
-			div.a {font-family: verdana;}
-			div.b {font-family: 'times new roman';}
-			#div1, #div2 {font-size-adjust: 0.70;}
-						
-						
-			
-			div.background {
-			  background: rgb(239, 242, 243) url(klematis.jpg) no-repeat center;
-			  background-size: cover;
-			  align-items: center;
-			  display: flex;
-			  justify-content: center;
-			  height: 1000px;
-			  width: 200px;
-			  position:center fixed;
-			}
-			
-			div.transbox {
-			  background-color: rgb(226, 213, 213);
-			  -webkit-backdrop-filter: blur(5px);
-			  backdrop-filter: blur(5px);
-			  padding:30px;
-			  margin: 30px;
-			  font-weight: bold;
-			}
-						
-				
-						a:link, a:visited {
-						  background-color: rgba(241, 236, 241, 0);
-						  color: rgb(212, 11, 11);
-						  padding: 14px 25px;
-						  text-align: center;
-						  text-decoration: none;
-						  display: inline-block;
-						  
-						}
-						body {
-						  background-image: url(assets/dark-green-wall-shadow-background-with-flower-decoration.jpg);
-						  background-repeat: no-repeat;
-						  background-attachment: fixed;
-						  background-size: cover;
-						  background-color:rgba(241, 240, 237, 0);
-						}
-						a:hover, a:active {
-						  background-color:rgb(240, 177, 20);
-						  
-						  
-						}</style> 
+	<style>
+		body {
+  background-image: url('https://e0.pxfuel.com/wallpapers/840/285/desktop-wallpaper-vintage-computers-vintage-computers-background-on-bat-old-school-pc.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: -1px 0 rgb(156, 154, 126), 0 1px rgb(185, 176, 50), 1px 0 rgb(184, 184, 162), 0 -1px rgb(228, 10, 10);
+
+}
+		</style>
 	</head>
 	 <body>
 
-		<center>
-			<div class="background">
-		<div class="transbox">
-<form>
-	  <h1 style="color:rgb(95, 69, 69)"><i>  Updating Form </i></H1>
-      <form>     
+	<div class="cont"></div>
+	<body style="background-color:rgb(224, 209, 66);"></body>
+	  <h1 style="color:rgb(226, 226, 226)"><i>  Updating Form </i></H1>
+     <form id="form">
 	   <table boder="50" style="border-color:rgb(241, 8, 8)">
 	     <tr>
 		   <th>Entry Details</th>
@@ -83,12 +41,12 @@
 		
          <tr>	
             <td rowspan="3" id="ok">Gender</td>
-            <td><input type="radio" name="gender" value="male">Male</td>	
+            <td><input type="radio" name="gender" value="male" id="m">Male</td>	
 			</tr>
 			<tr>
-			<td><input type="radio" name="gender"value="female">Female</td></tr>
+			<td><input type="radio" name="gender"value="female" id="f">Female</td></tr>
 			<tr>
-			<td><input type="radio" name="gender" value="others">Others</td>
+			<td><input type="radio" name="gender" value="others" id="o">Others</td>
          </tr>
  <tr>
 		 <td>Language</td>
@@ -151,7 +109,7 @@
         	<td><input type="text" value="" size="25" maxlength="20" id="cp"required></td>	
          </tr>
          <tr>
-            <td>Ahcivement</td>			
+            <td>Achivement</td>			
         	<td><textarea id="ac"></textarea></td>	
          </tr>
          <tr>
@@ -183,16 +141,19 @@
 
     <tr>
 <td> Image Option </td>
-<td><input type="file" id="my file" name="file name" required></td>
+<td><input type="file" id="file" name="file name" required></td>
  
       </tr>
       </TABLE>
-	</form>
+</form>
 		 </br>	  
-		 <input type="submit" id="sub" onclick="sub()">
+		 </br>
+
+		 <input type="submit" id="sub">
+
 </center>
-</div>
-	</div>
+<script src="verify.js"></script>
+
 	</body>
 </html>
 
